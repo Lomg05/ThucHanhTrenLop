@@ -1,0 +1,101 @@
+﻿@model Student
+@{
+    Layout = "~/Views/Shared/MyLayout.cshtml";
+    ViewData["Title"] = "Students";
+}
+
+<div>
+    <form asp-controller="Student" asp-action="Create" method="post" class="mt-3">
+
+        <!-- Name -->
+        <div class="form-group row" style="margin-top:7px">
+            <label asp-for="Name" class="col-sm-2 col-form-label"></label>
+            <div class="col-sm-10">
+                <input asp-for="Name" class="form-control" placeholder="Họ tên" />
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+        </div>
+
+        <!-- Email -->
+        <div class="form-group row" style="margin-top:7px">
+            <label asp-for="Email" class="col-sm-2 col-form-label"></label>
+            <div class="col-sm-10">
+                <input asp-for="Email" class="form-control" placeholder="Email" />
+                <span asp-validation-for="Email" class="text-danger"></span>
+            </div>
+        </div>
+
+        <!-- Password -->
+        <div class="form-group row" style="margin-top:7px">
+            <label asp-for="Password" class="col-sm-2 col-form-label"></label>
+            <div class="col-sm-10">
+                <input asp-for="Password" class="form-control" placeholder="Password" type="password" />
+                <span asp-validation-for="Password" class="text-danger"></span>
+            </div>
+        </div>
+
+        <!-- Branch -->
+        <div class="form-group row" style="margin-top:7px">
+            <label asp-for="Branch" class="col-sm-2 col-form-label"></label>
+            <div class="col-sm-10">
+                <select asp-for="Branch" class="custom-select mr-sm-2"
+                        asp-items="Html.GetEnumSelectList<Branch>()">
+                    <option value="">-- Chọn chi nhánh --</option>
+                </select>
+                <span asp-validation-for="Branch" class="text-danger"></span>
+            </div>
+        </div>
+
+        <!-- IsRegular -->
+        <div class="form-group row" style="margin-top:7px">
+            <label asp-for="IsRegular" class="col-sm-2 col-form-label"></label>
+            <div class="col-sm-10">
+                <div class="form-check">
+                    <input asp-for="IsRegular" class="form-check-input" type="checkbox" />
+                    <label class="form-check-label" asp-for="IsRegular"></label>
+                </div>
+            </div>
+        </div>
+
+        <!-- Date of Birth -->
+        <div class="form-group row" style="margin-top:7px">
+            <label asp-for="DateOfBirth" class="col-sm-2 col-form-label"></label>
+            <div class="col-sm-10">
+                <input asp-for="DateOfBirth" class="form-control" type="date" />
+                <span asp-validation-for="DateOfBirth" class="text-danger"></span>
+            </div>
+        </div>
+
+        <!-- Gender -->
+        <div class="form-group row" style="margin-top:7px">
+            <label asp-for="Gender" class="col-sm-2 col-form-label"></label>
+            <div class="col-sm-10">
+                @foreach (var gender in ViewBag.AllGenders)
+                {
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" asp-for="Gender" value="@gender" id="Gender@(gender)" />
+                        <label class="form-check-label" for="Gender@(gender)">@gender</label>
+                    </div>
+                }
+                <span asp-validation-for="Gender" class="text-danger"></span>
+            </div>
+        </div>
+
+        <!-- Address -->
+        <div class="form-group row" style="margin-top:7px">
+            <label asp-for="Address" class="col-sm-2 col-form-label"></label>
+            <div class="col-sm-10">
+                <textarea asp-for="Address" class="form-control" placeholder="Địa chỉ"></textarea>
+                <span asp-validation-for="Address" class="text-danger"></span>
+            </div>
+        </div>
+
+        <!-- Submit Button -->
+        <div class="form-group row" style="margin-top:10px">
+            <div class="col-sm-10 offset-sm-2">
+                <button type="submit" class="btn btn-primary">Create</button>
+            </div>
+        </div>
+
+    </form>
+</div>

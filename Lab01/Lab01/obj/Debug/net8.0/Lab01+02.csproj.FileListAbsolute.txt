@@ -1,0 +1,10 @@
+C:\Users\Long Vu\Downloads\LapTrinhWeb\Lab01\Lab01\obj\Debug\net8.0\Lab01+02.csproj.AssemblyReference.cache
+C:\Users\Long Vu\Downloads\LapTrinhWeb\Lab01\Lab01\obj\Debug\net8.0\rpswa.dswa.cache.json
+C:\Users\Long Vu\Downloads\LapTrinhWeb\Lab01\Lab01\obj\Debug\net8.0\Lab01+02.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Long Vu\Downloads\LapTrinhWeb\Lab01\Lab01\obj\Debug\net8.0\Lab01+02.AssemblyInfoInputs.cache
+C:\Users\Long Vu\Downloads\LapTrinhWeb\Lab01\Lab01\obj\Debug\net8.0\Lab01+02.AssemblyInfo.cs
+C:\Users\Long Vu\Downloads\LapTrinhWeb\Lab01\Lab01\obj\Debug\net8.0\Lab01+02.csproj.CoreCompileInputs.cache
+C:\Users\Long Vu\Downloads\LapTrinhWeb\Lab01\Lab01\obj\Debug\net8.0\Lab01+02.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Long Vu\Downloads\LapTrinhWeb\Lab01\Lab01\obj\Debug\net8.0\Lab01+02.RazorAssemblyInfo.cache
+C:\Users\Long Vu\Downloads\LapTrinhWeb\Lab01\Lab01\obj\Debug\net8.0\Lab01+02.RazorAssemblyInfo.cs
+C:\Users\Long Vu\Downloads\LapTrinhWeb\Lab01\Lab01\obj\Debug\net8.0\Lab01+02.sourcelink.json

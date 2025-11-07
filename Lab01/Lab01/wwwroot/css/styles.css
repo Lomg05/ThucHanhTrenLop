@@ -1,0 +1,126 @@
+/* === Sidebar and Layout Styles === */
+body {
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    background-color: #f8f9fc;
+}
+
+#wrapper {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* Sidebar */
+#sidebar-wrapper {
+    width: 250px;
+    transition: all 0.3s ease;
+    background-color: #212529 !important;
+}
+
+    #sidebar-wrapper .sidebar-heading {
+        font-size: 1.25rem;
+        font-weight: 600;
+        background-color: #111418;
+    }
+
+.list-group-item {
+    border: none;
+    transition: background-color 0.2s ease;
+}
+
+    .list-group-item:hover {
+        background-color: #343a40;
+        color: #fff;
+    }
+
+    .list-group-item.bg-dark {
+        color: #adb5bd !important;
+        font-weight: 500;
+        text-transform: uppercase;
+        font-size: 0.75rem;
+        letter-spacing: 1px;
+    }
+
+/* Sidebar toggled (hidden) */
+#wrapper.toggled #sidebar-wrapper {
+    margin-left: -250px;
+}
+
+/* Page Content */
+#page-content-wrapper {
+    flex: 1;
+    background-color: #f8f9fc;
+    min-height: 100vh;
+}
+
+/* Navbar */
+.navbar {
+    padding: 0.75rem 1rem;
+}
+
+    .navbar .btn-outline-light {
+        color: #fff;
+        border-color: #fff;
+    }
+
+        .navbar .btn-outline-light:hover {
+            background-color: #fff;
+            color: #212529;
+        }
+
+    /* Search form */
+    .navbar input[type="search"] {
+        border-radius: 0.3rem;
+    }
+
+    .navbar button.btn-primary {
+        border-radius: 0.3rem;
+    }
+
+/* Content */
+.container-fluid {
+    padding: 2rem;
+}
+
+.table {
+    border-radius: 0.5rem;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0 0 15px rgba(0,0,0,0.05);
+}
+
+    .table th {
+        background-color: #343a40;
+        color: #fff;
+        text-transform: uppercase;
+        font-size: 0.8rem;
+    }
+
+    .table td, .table th {
+        vertical-align: middle !important;
+    }
+
+/* Buttons */
+.btn-primary {
+    border-radius: 0.3rem;
+    font-weight: 500;
+}
+
+    .btn-primary:hover {
+        opacity: 0.9;
+    }
+
+/* Icons */
+.bi {
+    margin-right: 0.4rem;
+}
+
+/* Responsive behavior */
+@media (max-width: 768px) {
+    #sidebar-wrapper {
+        margin-left: -250px;
+    }
+
+    #wrapper.toggled #sidebar-wrapper {
+        margin-left: 0;
+    }
+}

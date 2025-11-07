@@ -1,0 +1,37 @@
+﻿@{
+    ViewData["Title"] = "Student List";
+    Layout = "~/Views/Shared/MyLayoutHelper.cshtml";
+}
+@model IEnumerable<Student>
+
+<a asp-action="Create" class="btn btn-primary mb-3">Create Student</a>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Mã</th>
+            <th>Họ tên</th>
+            <th>Ngày sinh</th>
+            <th>Ngành</th>
+            <th>Giới tính</th>
+            <th>Hệ ĐT</th>
+            <th>Địa chỉ</th>
+            <th>Email</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.Id</td>
+                <td>@item.Name</td>
+                <td>@item.DateOfBirth</td>
+                <td>@item.Branch</td>
+                <td>@item.Gender</td>
+                <td>@item.IsRegular</td>
+                <td>@item.Address</td>
+                <td>@item.Email</td>
+            </tr>
+        }
+    </tbody>
+</table>
