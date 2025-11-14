@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "aSpI4OIbmow=",
+  "dgSpecHash": "xj5VuLtyJuc=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Long Vu\\Downloads\\LapTrinhWeb\\Lab01\\Lab01\\Lab01.csproj",
+  "projectFilePath": "C:\\Users\\Long Vu\\Downloads\\LapTrinhWeb\\ThucHanhTrenLop\\Lab01\\Lab01\\Lab01.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Long Vu\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\Long Vu\\.nuget\\packages\\microsoft.aspnetcore.diagnostics.entityframeworkcore\\6.0.10\\microsoft.aspnetcore.diagnostics.entityframeworkcore.6.0.10.nupkg.sha512",
